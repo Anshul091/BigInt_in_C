@@ -15,3 +15,12 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+#include <time.h>
+
+#define BASE 1000000000000000000ULL; // 1e18
+#define HALFBASE 1000000000ULL
+#define MAX_FACT 10000
+
+unsigned int decimal_precision = 3000;
+
