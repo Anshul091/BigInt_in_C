@@ -24,3 +24,12 @@
 
 unsigned int decimal_precision = 3000;
 
+#define OUTPUT_SQRT_FILENAME "./output_sqrt_10005.txt"
+#define OUTPUT_PI_FILENAME "./output_pi.txt"
+
+struct BigIntStruct
+{
+    short int sign;
+    unsigned int len;
+    unsigned long long *d;
+};
