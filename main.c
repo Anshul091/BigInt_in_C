@@ -33,3 +33,12 @@ struct BigIntStruct
     unsigned int len;
     unsigned long long *d;
 };
+
+struct FractionStruct
+{
+    struct BigIntStruct *num;
+    struct BigIntStruct *den;
+};
+
+struct ComplexStruct
+{
