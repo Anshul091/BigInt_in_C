@@ -50,3 +50,12 @@ typedef struct BigIntStruct *BigInt;
 typedef struct BigIntStruct BigIntObj;
 
 typedef struct ComplexStruct *Complex;
+typedef struct ComplexStruct ComplexObj;
+
+typedef struct FractionStruct *Fraction;
+typedef struct FractionStruct FractionObj;
+
+typedef unsigned long long llu;
+typedef long long ll;
+
+BigInt FACT[MAX_FACT];
