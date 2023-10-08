@@ -42,3 +42,11 @@ struct FractionStruct
 
 struct ComplexStruct
 {
+    long long int real;
+    long long int imag;
+};
+
+typedef struct BigIntStruct *BigInt;
+typedef struct BigIntStruct BigIntObj;
+
+typedef struct ComplexStruct *Complex;
