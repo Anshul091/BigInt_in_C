@@ -59,3 +59,12 @@ typedef unsigned long long llu;
 typedef long long ll;
 
 BigInt FACT[MAX_FACT];
+Fraction sqrt_10005 = NULL;
+Fraction PI;
+char *PI_str;
+
+// Function prototypes
+
+int Max(int x, int y);
+int Min(int x, int y);
+
