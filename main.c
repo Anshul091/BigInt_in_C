@@ -68,3 +68,12 @@ char *PI_str;
 int Max(int x, int y);
 int Min(int x, int y);
 
+// ---- BigInt functions ----
+BigInt new_BigInt(const unsigned int length);
+void set_zero(BigInt b);
+void free_BigInt(BigInt b);
+void print_BigInt(BigInt b);
+BigInt Add(const BigInt a, const BigInt b);
+BigInt Subtract(const BigInt a, const BigInt b);
+void _MUL_(llu x, llu y, llu *carry, llu *result);
+BigInt Multiply(const BigInt a, const BigInt b);
