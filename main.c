@@ -86,3 +86,12 @@ BigInt Power(BigInt num, llu p);
 BigInt GCD(BigInt a, BigInt b);
 BigInt Factorial(llu n);
 void precompute_factorial();
+void Increment(const BigInt a, const BigInt delta);
+void increase_size(BigInt b, const unsigned int delta_len);
+void remove_preceding_zeroes(BigInt a);
+int isPrime(int n);
+int gcd(int a, int b);
+
+// ---- Complex functions ----
+Complex new_Complex();
+void print_Complex(Complex a);
