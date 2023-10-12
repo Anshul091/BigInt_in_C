@@ -95,3 +95,11 @@ int gcd(int a, int b);
 // ---- Complex functions ----
 Complex new_Complex();
 void print_Complex(Complex a);
+void free_Complex(Complex a);
+long long int real_part(Complex a);
+long long int imag_part(Complex a);
+long long int modulus(Complex a);
+Complex conjugate(Complex a);
+Complex add_Complex(Complex a, Complex b);
+Complex subtract_Complex(Complex a, Complex b);
+Complex multiply_Complex(Complex a, Complex b);
