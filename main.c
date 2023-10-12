@@ -103,3 +103,12 @@ Complex conjugate(Complex a);
 Complex add_Complex(Complex a, Complex b);
 Complex subtract_Complex(Complex a, Complex b);
 Complex multiply_Complex(Complex a, Complex b);
+Complex divide_Complex(Complex a, Complex b);
+
+// ---- Fraction functions ----
+Fraction new_Fraction();
+Fraction input_Fraction();
+void print_Fraction(Fraction a);
+void reduce_Fraction(Fraction a);
+Fraction add_Fraction(Fraction a, Fraction b);
+Fraction subtract_Fraction(Fraction a, Fraction b);
