@@ -112,3 +112,12 @@ void print_Fraction(Fraction a);
 void reduce_Fraction(Fraction a);
 Fraction add_Fraction(Fraction a, Fraction b);
 Fraction subtract_Fraction(Fraction a, Fraction b);
+Fraction multiply_Fraction(Fraction a, Fraction b);
+Fraction divide_Fraction(Fraction a, Fraction b);
+void reciprocal_Fraction(Fraction a);
+void free_Fraction(Fraction a);
+void cancel_zeroes(Fraction a);
+
+// Calculate the square root of a BigInt using Newton Rapson method
+Fraction Square_Root(BigInt k, int n);
+
