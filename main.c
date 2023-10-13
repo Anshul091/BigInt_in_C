@@ -121,3 +121,12 @@ void cancel_zeroes(Fraction a);
 // Calculate the square root of a BigInt using Newton Rapson method
 Fraction Square_Root(BigInt k, int n);
 
+// Computes value of PI using Chudnovsky algorithm
+void PI_Chudnovsky(int n);
+
+int Max(int x, int y)
+{
+    return x > y ? x : y;
+}
+
+int Min(int x, int y)
