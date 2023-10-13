@@ -130,3 +130,12 @@ int Max(int x, int y)
 }
 
 int Min(int x, int y)
+{
+    return x < y ? x : y;
+}
+
+// -------------- BigInt functions ----------------
+
+BigInt new_BigInt(const unsigned int length)
+{
+    BigInt b = (BigInt)malloc(sizeof(BigIntObj));
