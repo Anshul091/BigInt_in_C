@@ -139,3 +139,12 @@ int Min(int x, int y)
 BigInt new_BigInt(const unsigned int length)
 {
     BigInt b = (BigInt)malloc(sizeof(BigIntObj));
+    if (b == NULL)
+    {
+        printf("Fatal error: Memory allocation failed!");
+        exit(1);
+    }
+    b->sign = 1;
+    b->len = length;
+    b->d = (llu *)malloc(length * sizeof(llu));
+    if (b->d == NULL)
