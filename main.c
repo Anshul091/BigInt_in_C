@@ -148,3 +148,11 @@ BigInt new_BigInt(const unsigned int length)
     b->len = length;
     b->d = (llu *)malloc(length * sizeof(llu));
     if (b->d == NULL)
+    {
+        printf("Fatal error: Memory allocation failed!");
+        exit(1);
+    }
+    return b;
+}
+
+void set_zero(BigInt b)
