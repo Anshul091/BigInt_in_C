@@ -174,3 +174,12 @@ void print_BigInt(BigInt b)
     int i = b->len;
     while (--i > 0 && b->d[i] == 0)
         ;
+
+    printf("%llu", b->d[i--]);
+
+    while (i >= 0)
+        printf("%018llu", b->d[i--]);
+
+    printf("\n");
+}
+
