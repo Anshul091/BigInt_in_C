@@ -156,3 +156,12 @@ BigInt new_BigInt(const unsigned int length)
 }
 
 void set_zero(BigInt b)
+{
+    for (unsigned int i = 0; i < b->len; i++)
+        b->d[i] = 0;
+}
+
+void free_BigInt(BigInt b)
+{
+    free(b->d);
+    free(b);
