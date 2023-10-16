@@ -165,3 +165,12 @@ void free_BigInt(BigInt b)
 {
     free(b->d);
     free(b);
+}
+
+void print_BigInt(BigInt b)
+{
+    printf("%c", b->sign == 1 ? '+' : '-');
+
+    int i = b->len;
+    while (--i > 0 && b->d[i] == 0)
+        ;
