@@ -183,3 +183,12 @@ void print_BigInt(BigInt b)
     printf("\n");
 }
 
+BigInt input_BigInt() // function to take input from user by string
+{
+    char *arr;
+    arr = (char *)malloc(2 * sizeof(char));
+    int count = 0;
+    int szalloc = 2;
+    char c = ' ';
+    int sgn = 1;
+    // Removing whitespaces from the input buffer
