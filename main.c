@@ -192,3 +192,11 @@ BigInt input_BigInt() // function to take input from user by string
     char c = ' ';
     int sgn = 1;
     // Removing whitespaces from the input buffer
+    while (c == ' ' || c == '\n') {
+        c = getchar();
+    }
+    ungetc(c, stdin);
+
+    while (c != '\n')
+    {
+        if (count == szalloc - 1)
