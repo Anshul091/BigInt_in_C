@@ -200,3 +200,12 @@ BigInt input_BigInt() // function to take input from user by string
     while (c != '\n')
     {
         if (count == szalloc - 1)
+        {
+
+            arr = (char *)realloc(arr, 2 * szalloc * sizeof(char));
+            szalloc *= 2;
+        }
+
+        scanf("%c", &c);
+        if (count == 0)
+        {
