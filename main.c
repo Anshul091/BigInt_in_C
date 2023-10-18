@@ -209,3 +209,12 @@ BigInt input_BigInt() // function to take input from user by string
         scanf("%c", &c);
         if (count == 0)
         {
+            if (c == '+' || c == '-')
+            {
+                if (c == '-')
+                {
+                    sgn = 0;
+                }
+                continue;
+            }
+        }
