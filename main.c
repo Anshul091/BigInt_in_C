@@ -218,3 +218,12 @@ BigInt input_BigInt() // function to take input from user by string
                 continue;
             }
         }
+        arr[count] = c;
+
+        count++;
+    }
+    // printf("count :%d\n",count);
+    int lenreq = count / 18;
+    if (count % 18 != 0)
+    {
+        lenreq++;
