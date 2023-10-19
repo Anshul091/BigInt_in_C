@@ -236,3 +236,12 @@ BigInt input_BigInt() // function to take input from user by string
         llu tmp = 0;
         if (count <= 18)
         {
+            for (int i = 0; i < count - 1; i++)
+            {
+                tmp = 10 * tmp + (arr[i] - '0');
+                // printf("%d ",arr[i]-'0');
+            }
+            x->d[j] = tmp;
+            j++;
+            count = 0;
+            // printf("\ntmp %d \n",arr[3]-'0');
