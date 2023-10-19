@@ -227,3 +227,12 @@ BigInt input_BigInt() // function to take input from user by string
     if (count % 18 != 0)
     {
         lenreq++;
+    }
+    BigInt x = new_BigInt(lenreq);
+    set_zero(x);
+    int j = 0;
+    while (count != 0)
+    {
+        llu tmp = 0;
+        if (count <= 18)
+        {
