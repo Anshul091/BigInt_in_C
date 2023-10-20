@@ -253,3 +253,12 @@ BigInt input_BigInt() // function to take input from user by string
                 tmp = 10 * tmp + (arr[i] - '0');
             }
             count -= 18;
+            x->d[j] = tmp;
+            j++;
+        }
+    }
+    x->sign = sgn;
+    return x;
+}
+
+BigInt Add(const BigInt a, const BigInt b)
