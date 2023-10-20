@@ -271,3 +271,12 @@ BigInt Add(const BigInt a, const BigInt b)
     {
         return Subtract(b, a);
     }
+
+    BigInt c = new_BigInt(1 + Max(a->len, b->len));
+    set_zero(c);
+    llu carry = 0;
+    for (unsigned int i = 0; i < c->len - 1; i++)
+    {
+        c->d[i] = carry +
+                  (i < a->len ? a->d[i] : 0) +
+                  (i < b->len ? b->d[i] : 0);
