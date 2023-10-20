@@ -262,3 +262,12 @@ BigInt input_BigInt() // function to take input from user by string
 }
 
 BigInt Add(const BigInt a, const BigInt b)
+{
+    if (a->sign == 1 && b->sign == 0)
+    {
+        return Subtract(a, b);
+    }
+    if (a->sign == 0 && b->sign == 1)
+    {
+        return Subtract(b, a);
+    }
