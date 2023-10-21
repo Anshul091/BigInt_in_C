@@ -289,3 +289,12 @@ BigInt Add(const BigInt a, const BigInt b)
     }
 
     if (a->sign == 0 && b->sign == 0)
+    {
+        c->sign = 0;
+    }
+
+    remove_preceding_zeroes(c);
+    return c;
+}
+
+BigInt Subtract(const BigInt a, const BigInt b)
