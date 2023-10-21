@@ -280,3 +280,12 @@ BigInt Add(const BigInt a, const BigInt b)
         c->d[i] = carry +
                   (i < a->len ? a->d[i] : 0) +
                   (i < b->len ? b->d[i] : 0);
+        carry = c->d[i] / BASE;
+        c->d[i] %= BASE;
+    }
+    if (carry > 0)
+    {
+        c->d[c->len - 1] = carry;
+    }
+
+    if (a->sign == 0 && b->sign == 0)
