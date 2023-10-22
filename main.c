@@ -298,3 +298,11 @@ BigInt Add(const BigInt a, const BigInt b)
 }
 
 BigInt Subtract(const BigInt a, const BigInt b)
+{
+    BigInt c = new_BigInt(1 + Max(a->len, b->len));
+    set_zero(c);
+    ll carry = 0;
+    ll temp;
+    for (unsigned int i = 0; i < c->len - 1; i++)
+    {
+        temp = carry +
