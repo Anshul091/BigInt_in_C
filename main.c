@@ -315,3 +315,12 @@ BigInt Subtract(const BigInt a, const BigInt b)
             c->d[i] = temp + BASE;
         }
         else
+        {
+            carry = 0;
+            c->d[i] = temp;
+        }
+    }
+
+    if (carry > 0)
+    {
+        c->d[c->len - 1] = carry;
