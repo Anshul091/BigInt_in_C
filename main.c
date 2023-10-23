@@ -342,3 +342,12 @@ BigInt Subtract(const BigInt a, const BigInt b)
             }
             else
             {
+                carry = 0;
+                c->d[i] = temp;
+            }
+        }
+    }
+
+    remove_preceding_zeroes(c);
+    return c;
+}
