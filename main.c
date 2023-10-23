@@ -333,3 +333,12 @@ BigInt Subtract(const BigInt a, const BigInt b)
         {
             temp = carry +
                    (i < b->len ? b->d[i] : 0) -
+                   (i < a->len ? a->d[i] : 0);
+
+            if (temp < 0)
+            {
+                carry = -1;
+                c->d[i] = temp + BASE;
+            }
+            else
+            {
