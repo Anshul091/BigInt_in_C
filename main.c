@@ -324,3 +324,12 @@ BigInt Subtract(const BigInt a, const BigInt b)
     if (carry > 0)
     {
         c->d[c->len - 1] = carry;
+    }
+    else if (carry < 0)
+    {
+        c->sign = 0;
+        carry = 0;
+        for (unsigned int i = 0; i < c->len - 1; i++)
+        {
+            temp = carry +
+                   (i < b->len ? b->d[i] : 0) -
