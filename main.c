@@ -368,3 +368,12 @@ void _MUL_(llu x, llu y, llu *carry, llu *result)
 
     // Note the += here, to add to the previous value; Also note that the previous carry is added to this because carry will be reset to new carry
     *result += x0 * y0 + (excess % HALFBASE) * HALFBASE + (*carry);
+
+    // No += here because carry will be recalculated
+    *carry = x1 * y1 + excess / HALFBASE + (*result) / BASE;
+
+    *result %= BASE;
+}
+
+BigInt Multiply(const BigInt a, const BigInt b)
+{
