@@ -351,3 +351,11 @@ BigInt Subtract(const BigInt a, const BigInt b)
     remove_preceding_zeroes(c);
     return c;
 }
+
+void _MUL_(llu x, llu y, llu *carry, llu *result)
+{
+    /*
+    Multiplies x and y, and stores the product in result, and excess value in carry.
+    The value stored in carry is added to result before multiplication.
+    The value stored in result is incremented, not overwritten.
+    */
