@@ -403,3 +403,12 @@ void Left_Shift(BigInt num, unsigned int shift)
 {
     if (shift == 0)
     {
+        return;
+    }
+    if (num->len == 1 && num->d[0] == 0)
+    {
+        return;
+    }
+
+    llu *temp = (llu *)malloc(sizeof(llu) * (num->len + shift));
+    if (temp == NULL)
