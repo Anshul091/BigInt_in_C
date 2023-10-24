@@ -386,3 +386,12 @@ BigInt Multiply(const BigInt a, const BigInt b)
         carry = 0;
         for (unsigned int j = 0; j < b->len; j++)
         {
+            _MUL_(a->d[i], b->d[j], &carry, &(c->d[i + j]));
+            // _MUL_ exactly does the below 3 operations without overflow
+            // c->d[i + j] += a->d[i] * b->d[j] + carry;
+            // carry = c->d[i + j] / BASE;
+            // c->d[i + j] %= BASE;
+        }
+        c->d[i + b->len] = carry;
+    }
+
