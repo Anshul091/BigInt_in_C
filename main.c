@@ -395,3 +395,11 @@ BigInt Multiply(const BigInt a, const BigInt b)
         c->d[i + b->len] = carry;
     }
 
+    remove_preceding_zeroes(c);
+    return c;
+}
+
+void Left_Shift(BigInt num, unsigned int shift)
+{
+    if (shift == 0)
+    {
