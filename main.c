@@ -412,3 +412,12 @@ void Left_Shift(BigInt num, unsigned int shift)
 
     llu *temp = (llu *)malloc(sizeof(llu) * (num->len + shift));
     if (temp == NULL)
+    {
+        printf("Fatal Error: Memory allocation failed!");
+        exit(1);
+    }
+    for (unsigned int i = 0; i < shift; i++)
+    {
+        temp[i] = 0;
+    }
+
