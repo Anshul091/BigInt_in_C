@@ -430,3 +430,12 @@ void Left_Shift(BigInt num, unsigned int shift)
     num->len += shift;
 }
 
+int Compare(const BigInt a, const BigInt b)
+{
+    BigInt diff = Subtract(a, b);
+    int flag = 0;
+    for (int i = 0; i < diff->len; i++)
+    {
+        if (diff->d[i] != 0)
+        {
+            flag = 1;
