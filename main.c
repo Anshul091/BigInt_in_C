@@ -421,3 +421,12 @@ void Left_Shift(BigInt num, unsigned int shift)
         temp[i] = 0;
     }
 
+    for (unsigned int i = 0; i < num->len; i++)
+    {
+        temp[i + shift] = num->d[i];
+    }
+    free(num->d);
+    num->d = temp;
+    num->len += shift;
+}
+
