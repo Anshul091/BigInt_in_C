@@ -439,3 +439,12 @@ int Compare(const BigInt a, const BigInt b)
         if (diff->d[i] != 0)
         {
             flag = 1;
+        }
+    }
+    if (diff->sign == 0) // diff is negative
+    {
+        free_BigInt(diff);
+        return -1;
+    }
+    else if (diff->sign == 1)
+    {
