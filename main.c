@@ -448,3 +448,11 @@ int Compare(const BigInt a, const BigInt b)
     }
     else if (diff->sign == 1)
     {
+        free_BigInt(diff);
+        return flag;
+    }
+}
+
+BigInt Divide(const BigInt a, const BigInt b, BigInt *remainder)
+{
+    BigInt q = new_BigInt(1);
