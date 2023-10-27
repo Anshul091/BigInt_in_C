@@ -483,3 +483,12 @@ BigInt Divide(const BigInt a, const BigInt b, BigInt *remainder)
     {
         mod = BASE;
         mod /= 10;
+        while (mod)
+        {
+            cur = a->d[i] / mod;
+            cur %= 10;
+            // printf("%d\n", cur);
+            mod /= 10;
+            temp = r;
+            r = Multiply(r, ten);
+            free_BigInt(temp);
