@@ -465,3 +465,12 @@ BigInt Divide(const BigInt a, const BigInt b, BigInt *remainder)
     BigInt ten = new_BigInt(1);
     ten->d[0] = 10;
 
+    BigInt table[11];
+    table[0] = new_BigInt(1);
+    set_zero(table[0]);
+
+    for (int i = 1; i <= 10; i++)
+    {
+        table[i] = Add(table[i - 1], b);
+    }
+
