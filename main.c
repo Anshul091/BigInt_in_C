@@ -456,3 +456,12 @@ int Compare(const BigInt a, const BigInt b)
 BigInt Divide(const BigInt a, const BigInt b, BigInt *remainder)
 {
     BigInt q = new_BigInt(1);
+    set_zero(q);
+    q->sign = 1 - a->sign ^ b->sign;
+
+    BigInt r = new_BigInt(1);
+    set_zero(r);
+
+    BigInt ten = new_BigInt(1);
+    ten->d[0] = 10;
+
