@@ -474,3 +474,12 @@ BigInt Divide(const BigInt a, const BigInt b, BigInt *remainder)
         table[i] = Add(table[i - 1], b);
     }
 
+    llu mod;
+    llu cur;
+    int quo;
+    BigInt temp;
+
+    for (int i = a->len - 1; i >= 0; i--)
+    {
+        mod = BASE;
+        mod /= 10;
