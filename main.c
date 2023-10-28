@@ -562,3 +562,12 @@ char *Decimal_Division(BigInt a, BigInt b)
         mod /= 10;
         while (mod)
         {
+            cur = quotient->d[i] / mod;
+            cur %= 10;
+            mod /= 10;
+            if (flag)
+            {
+                if (cur == 0)
+                {
+                    sz--;
+                    continue;
