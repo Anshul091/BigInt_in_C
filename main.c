@@ -553,3 +553,12 @@ char *Decimal_Division(BigInt a, BigInt b)
     llu cur;
     int flag = 1;
     unsigned int ind = 0;
+    unsigned int sz = quotient->len * 18 + decimal_precision + 2;
+
+    char *result = (char *)malloc(sizeof(char) * sz);
+    for (int i = quotient->len - 1; i >= 0; i--)
+    {
+        mod = BASE;
+        mod /= 10;
+        while (mod)
+        {
