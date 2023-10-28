@@ -518,3 +518,12 @@ BigInt Divide(const BigInt a, const BigInt b, BigInt *remainder)
             quo = 0;
             while (Compare(r, table[quo]) >= 0)
             {
+                quo++;
+            }
+            quo--;
+
+            temp = q;
+            q = Multiply(q, ten);
+            free_BigInt(temp);
+            q->d[0] += quo;
+            temp = r;
