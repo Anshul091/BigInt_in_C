@@ -545,3 +545,11 @@ BigInt Divide(const BigInt a, const BigInt b, BigInt *remainder)
 }
 
 char *Decimal_Division(BigInt a, BigInt b)
+{
+    BigInt remainder;
+    BigInt temp = new_BigInt(1);
+    BigInt quotient = Divide(a, b, &remainder);
+    llu mod;
+    llu cur;
+    int flag = 1;
+    unsigned int ind = 0;
