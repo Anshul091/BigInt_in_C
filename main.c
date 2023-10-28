@@ -536,3 +536,12 @@ BigInt Divide(const BigInt a, const BigInt b, BigInt *remainder)
 
     for (int i = 0; i <= 10; i++)
     {
+        free_BigInt(table[i]);
+    }
+    free_BigInt(ten);
+
+    remove_preceding_zeroes(q);
+    return q;
+}
+
+char *Decimal_Division(BigInt a, BigInt b)
