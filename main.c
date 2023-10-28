@@ -492,3 +492,12 @@ BigInt Divide(const BigInt a, const BigInt b, BigInt *remainder)
             temp = r;
             r = Multiply(r, ten);
             free_BigInt(temp);
+            r->d[0] += cur;
+
+            // I thought binary search would be faster,
+            // but ended up being slower as there are only 10 values to search
+
+            // // Using binary search to find the quotient
+            // int low = 0, high = 10, mid;
+            // quo = 0;
+            // while (low <= high)
