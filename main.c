@@ -509,3 +509,12 @@ BigInt Divide(const BigInt a, const BigInt b, BigInt *remainder)
             //         low = mid + 1;
             //     }
             //     else
+            //     {
+            //         high = mid - 1;
+            //     }
+            // }
+
+            // Using linear search to find the quotient
+            quo = 0;
+            while (Compare(r, table[quo]) >= 0)
+            {
