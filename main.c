@@ -501,3 +501,11 @@ BigInt Divide(const BigInt a, const BigInt b, BigInt *remainder)
             // int low = 0, high = 10, mid;
             // quo = 0;
             // while (low <= high)
+            // {
+            //     mid = (low + high) / 2;
+            //     if (Compare(r, table[mid]) >= 0)
+            //     {
+            //         quo = mid;
+            //         low = mid + 1;
+            //     }
+            //     else
