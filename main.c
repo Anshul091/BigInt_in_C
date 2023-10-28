@@ -527,3 +527,12 @@ BigInt Divide(const BigInt a, const BigInt b, BigInt *remainder)
             free_BigInt(temp);
             q->d[0] += quo;
             temp = r;
+            r = Subtract(r, table[quo]);
+            free_BigInt(temp);
+        }
+    }
+    remove_preceding_zeroes(r);
+    *remainder = r;
+
+    for (int i = 0; i <= 10; i++)
+    {
