@@ -571,3 +571,12 @@ char *Decimal_Division(BigInt a, BigInt b)
                 {
                     sz--;
                     continue;
+                }
+                else
+                {
+                    flag = 0;
+                }
+            }
+            // printf("%d\n", cur);
+            result[ind++] = cur + '0';
+        }
