@@ -598,3 +598,11 @@ char *Decimal_Division(BigInt a, BigInt b)
 
     // printf("sz = %d\n", sz);
     // printf("ind = %d\n", ind);
+
+    for (int i = quotient->len - 1; i >= 0; i--)
+    {
+        mod = BASE;
+        mod /= 10;
+        while (mod)
+        {
+            cur = quotient->d[i] / mod;
