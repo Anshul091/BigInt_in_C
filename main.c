@@ -606,3 +606,12 @@ char *Decimal_Division(BigInt a, BigInt b)
         while (mod)
         {
             cur = quotient->d[i] / mod;
+            cur %= 10;
+            mod /= 10;
+            result[ind++] = cur + '0';
+            // printf("%d\n", cur);
+
+            if (ind == sz - 1)
+            {
+                break;
+            }
