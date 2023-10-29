@@ -589,3 +589,12 @@ char *Decimal_Division(BigInt a, BigInt b)
     Left_Shift(remainder, (decimal_precision + 17) / 18);
     // BigInt ten = new_BigInt(1);
     // ten->d[0] = 10;
+    // remainder = Multiply(remainder, Power(ten, decimal_precision));
+    quotient = Divide(remainder, b, &temp);
+
+    // printf("Quotient: ");
+    // print_BigInt(quotient);
+    // printf("%d\n", quotient->len);
+
+    // printf("sz = %d\n", sz);
+    // printf("ind = %d\n", ind);
