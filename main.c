@@ -580,3 +580,12 @@ char *Decimal_Division(BigInt a, BigInt b)
             // printf("%d\n", cur);
             result[ind++] = cur + '0';
         }
+    }
+    // print_BigInt(remainder);
+
+    result[ind++] = '.';
+    // return result;
+    // free_BigInt(quotient);
+    Left_Shift(remainder, (decimal_precision + 17) / 18);
+    // BigInt ten = new_BigInt(1);
+    // ten->d[0] = 10;
