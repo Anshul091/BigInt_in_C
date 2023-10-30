@@ -615,3 +615,12 @@ char *Decimal_Division(BigInt a, BigInt b)
             {
                 break;
             }
+        }
+        if (ind == sz - 1)
+        {
+            break;
+        }
+    }
+    result[ind] = '\0';
+
+    // free_BigInt(remainder);
