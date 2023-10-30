@@ -651,3 +651,11 @@ BigInt Power(BigInt num, llu p)
             ans = Multiply(ans, num);
             free_BigInt(temp);
         }
+        p >>= 1;
+        temp = num;
+        num = Multiply(num, num);
+        free_BigInt(temp);
+    }
+    return ans;
+}
+
