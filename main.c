@@ -642,3 +642,12 @@ BigInt Power(BigInt num, llu p)
     BigInt ans = new_BigInt(1);
     ans->d[0] = 1;
 
+    BigInt temp;
+    while (p > 0)
+    {
+        if (p & 1)
+        {
+            temp = ans;
+            ans = Multiply(ans, num);
+            free_BigInt(temp);
+        }
