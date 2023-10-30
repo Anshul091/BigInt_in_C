@@ -633,3 +633,12 @@ char *Decimal_Division(BigInt a, BigInt b)
 BigInt Remainder(BigInt a, BigInt b)
 {
     BigInt r;
+    Divide(a, b, &r);
+    return r;
+}
+
+BigInt Power(BigInt num, llu p)
+{
+    BigInt ans = new_BigInt(1);
+    ans->d[0] = 1;
+
