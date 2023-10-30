@@ -624,3 +624,12 @@ char *Decimal_Division(BigInt a, BigInt b)
     result[ind] = '\0';
 
     // free_BigInt(remainder);
+    // free_BigInt(temp);
+    // free_BigInt(quotient);
+
+    return result;
+}
+
+BigInt Remainder(BigInt a, BigInt b)
+{
+    BigInt r;
