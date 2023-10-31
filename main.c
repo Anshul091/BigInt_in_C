@@ -704,3 +704,11 @@ void precompute_factorial()
 }
 
 void Increment(const BigInt a, const BigInt delta)
+{
+    if (a->len <= delta->len)
+    {
+        increase_size(a, delta->len - a->len + 1);
+    }
+    llu carry = 0;
+    for (unsigned int i = 0; i < delta->len; i++)
+    {
