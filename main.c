@@ -686,3 +686,12 @@ BigInt Factorial(llu n)
         temp->d[0] = i;
         ans = Multiply(ans, temp);
     }
+    return ans;
+}
+
+void precompute_factorial()
+{
+    FACT[0] = Factorial(1);
+    BigInt n = new_BigInt(1);
+    n->d[0] = 1;
+
