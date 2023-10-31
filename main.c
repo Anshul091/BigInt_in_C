@@ -659,3 +659,12 @@ BigInt Power(BigInt num, llu p)
     return ans;
 }
 
+BigInt GCD(BigInt a, BigInt b)
+{
+    BigInt temp;
+    BigInt zero = new_BigInt(1);
+    set_zero(zero);
+    while (Compare(b, zero) != 0)
+    {
+        // printf("%d\n", Compare(b, zero));
+        temp = Remainder(a, b);
