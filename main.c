@@ -695,3 +695,12 @@ void precompute_factorial()
     BigInt n = new_BigInt(1);
     n->d[0] = 1;
 
+    for (int i = 1; i < MAX_FACT; i++)
+    {
+        FACT[i] = Multiply(FACT[i - 1], n);
+        n->d[0]++;
+    }
+    free_BigInt(n);
+}
+
+void Increment(const BigInt a, const BigInt delta)
