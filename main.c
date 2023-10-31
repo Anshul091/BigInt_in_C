@@ -668,3 +668,12 @@ BigInt GCD(BigInt a, BigInt b)
     {
         // printf("%d\n", Compare(b, zero));
         temp = Remainder(a, b);
+        a = b;
+        b = temp;
+    }
+    return a;
+}
+
+BigInt Factorial(llu n)
+{
+    BigInt ans = new_BigInt(1);
