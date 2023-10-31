@@ -677,3 +677,12 @@ BigInt GCD(BigInt a, BigInt b)
 BigInt Factorial(llu n)
 {
     BigInt ans = new_BigInt(1);
+    // setzero(ans);
+    ans->d[0] = 1;
+    // set_zero(temp);
+    for (int i = 1; i <= n; i++)
+    {
+        BigInt temp = new_BigInt(1);
+        temp->d[0] = i;
+        ans = Multiply(ans, temp);
+    }
