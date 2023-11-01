@@ -721,3 +721,12 @@ void Increment(const BigInt a, const BigInt delta)
         a->d[i] += carry;
         carry = a->d[i] / BASE;
         a->d[i] %= BASE;
+    }
+}
+
+void increase_size(BigInt b, const unsigned int delta_len)
+{
+    b->d = (llu *)realloc(b->d, sizeof(llu) * (b->len + delta_len));
+    b->len += delta_len;
+    for (int i = b->len - delta_len; i < b->len; i++)
+        b->d[i] = 0;
