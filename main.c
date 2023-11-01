@@ -730,3 +730,12 @@ void increase_size(BigInt b, const unsigned int delta_len)
     b->len += delta_len;
     for (int i = b->len - delta_len; i < b->len; i++)
         b->d[i] = 0;
+}
+
+void remove_preceding_zeroes(BigInt a)
+{
+    while (a->len > 1 && a->d[a->len - 1] == 0)
+    {
+        a->len--;
+    }
+}
