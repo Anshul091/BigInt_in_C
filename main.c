@@ -712,3 +712,12 @@ void Increment(const BigInt a, const BigInt delta)
     llu carry = 0;
     for (unsigned int i = 0; i < delta->len; i++)
     {
+        a->d[i] += delta->d[i] + carry;
+        carry = a->d[i] / BASE;
+        a->d[i] %= BASE;
+    }
+    for (unsigned int i = delta->len; i < a->len; i++)
+    {
+        a->d[i] += carry;
+        carry = a->d[i] / BASE;
+        a->d[i] %= BASE;
