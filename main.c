@@ -765,3 +765,12 @@ int gcd(int a, int b)
     return a;
 }
 
+// ---------------- Complex Functions ----------------
+
+Complex new_Complex()
+{
+    Complex temp;
+    temp = (Complex)malloc(sizeof(ComplexObj));
+    return temp;
+}
+
