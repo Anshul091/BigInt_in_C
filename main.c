@@ -774,3 +774,12 @@ Complex new_Complex()
     return temp;
 }
 
+void print_Complex(Complex a)
+{
+    if (a->imag >= 0)
+        printf("%lld + %lldi\n", (a->real), (a->imag));
+    else
+        printf("%lld - %lldi\n", (a->real), -(a->imag));
+}
+
+void free_Complex(Complex a)
