@@ -801,3 +801,11 @@ Complex conjugate(Complex a)
 {
     Complex c = new_Complex();
     c->real = a->real;
+    if (a->imag == 0)
+    {
+        c->imag = a->imag;
+    }
+    else
+        c->imag = (-1) * (a->imag);
+    return c;
+}
