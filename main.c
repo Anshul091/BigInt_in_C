@@ -792,3 +792,12 @@ long long int real_part(Complex a)
     return a->real;
 }
 
+long long int imag_part(Complex a)
+{
+    return a->imag;
+}
+
+Complex conjugate(Complex a)
+{
+    Complex c = new_Complex();
+    c->real = a->real;
