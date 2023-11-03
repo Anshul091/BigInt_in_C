@@ -783,3 +783,12 @@ void print_Complex(Complex a)
 }
 
 void free_Complex(Complex a)
+{
+    free(a);
+}
+
+long long int real_part(Complex a)
+{
+    return a->real;
+}
+
