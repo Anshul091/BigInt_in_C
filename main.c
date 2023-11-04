@@ -818,3 +818,12 @@ long long int modulus(Complex a)
 Complex add_Complex(Complex a, Complex b)
 {
     Complex c;
+    c = new_Complex();
+    c->real = ((a->real) + (b->real));
+    c->imag = (a->imag) + (b->imag);
+    return c;
+}
+
+Complex subtract_Complex(Complex a, Complex b)
+{
+    Complex c;
