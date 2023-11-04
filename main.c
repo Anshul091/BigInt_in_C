@@ -854,3 +854,11 @@ Complex divide_Complex(Complex a, Complex b)
 }
 
 // ------------ Fraction Functions ------------
+
+Fraction new_Fraction()
+{
+    Fraction c;
+    c = (Fraction)malloc(sizeof(FractionObj));
+    // c->num=new_BigInt(1);
+    // c->den=new_BigInt(1);
+    return c;
