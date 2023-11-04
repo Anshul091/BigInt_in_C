@@ -809,3 +809,12 @@ Complex conjugate(Complex a)
         c->imag = (-1) * (a->imag);
     return c;
 }
+
+long long int modulus(Complex a)
+{
+    return pow(a->real, 2) + pow(a->imag, 2);
+}
+
+Complex add_Complex(Complex a, Complex b)
+{
+    Complex c;
