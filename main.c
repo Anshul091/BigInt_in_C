@@ -862,3 +862,12 @@ Fraction new_Fraction()
     // c->num=new_BigInt(1);
     // c->den=new_BigInt(1);
     return c;
+}
+
+Fraction input_Fraction()
+{
+    Fraction c;
+    printf("Enter Numerator: ");
+    BigInt a = input_BigInt();
+    printf("Enter Denominator: ");
+    BigInt b = input_BigInt();
