@@ -836,3 +836,12 @@ Complex subtract_Complex(Complex a, Complex b)
 
 Complex multiply_Complex(Complex a, Complex b)
 {
+    Complex c = new_Complex();
+    c->real = (a->real * b->real) - (a->imag * b->imag);
+    c->imag = (a->real * b->imag) + (a->imag * b->real);
+
+    return c;
+}
+
+Complex divide_Complex(Complex a, Complex b)
+{
