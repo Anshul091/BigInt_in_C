@@ -827,3 +827,12 @@ Complex add_Complex(Complex a, Complex b)
 Complex subtract_Complex(Complex a, Complex b)
 {
     Complex c;
+    c = new_Complex();
+    c->real = a->real - b->real;
+    c->imag = a->imag - (b->imag);
+
+    return c;
+}
+
+Complex multiply_Complex(Complex a, Complex b)
+{
