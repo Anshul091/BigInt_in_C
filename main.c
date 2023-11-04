@@ -871,3 +871,12 @@ Fraction input_Fraction()
     BigInt a = input_BigInt();
     printf("Enter Denominator: ");
     BigInt b = input_BigInt();
+
+    c = (Fraction)malloc(sizeof(FractionObj));
+
+    c->num = a;
+    c->den = b;
+
+    return c;
+}
+
