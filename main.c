@@ -845,3 +845,12 @@ Complex multiply_Complex(Complex a, Complex b)
 
 Complex divide_Complex(Complex a, Complex b)
 {
+    Complex c = new_Complex();
+
+    c->real = real_part(multiply_Complex(a, conjugate(b))) / modulus(b);
+    c->imag = imag_part(multiply_Complex(a, conjugate(b))) / modulus(b);
+
+    return c;
+}
+
+// ------------ Fraction Functions ------------
