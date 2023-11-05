@@ -898,3 +898,11 @@ void reduce_Fraction(Fraction a)
     }
     BigInt rem;
     a->num = Divide(a->num, g, &rem);
+    a->den = Divide(a->den, g, &rem);
+}
+
+Fraction add_Fraction(Fraction a, Fraction b)
+{
+    Fraction c = new_Fraction();
+    c->num = Add(Multiply(a->num, b->den), Multiply(a->den, b->num));
+    c->den = Multiply(a->den, b->den);
