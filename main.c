@@ -889,3 +889,12 @@ void print_Fraction(Fraction a)
 }
 
 void reduce_Fraction(Fraction a)
+{
+    BigInt g = GCD(a->num, a->den);
+    remove_preceding_zeroes(g);
+    if (g->d[0] == 1)
+    {
+        return;
+    }
+    BigInt rem;
+    a->num = Divide(a->num, g, &rem);
