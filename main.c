@@ -880,3 +880,12 @@ Fraction input_Fraction()
     return c;
 }
 
+void print_Fraction(Fraction a)
+{
+    printf("Numerator :  ");
+    print_BigInt(a->num);
+    printf("Denominator : ");
+    print_BigInt(a->den);
+}
+
+void reduce_Fraction(Fraction a)
