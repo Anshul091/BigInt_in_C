@@ -933,3 +933,12 @@ Fraction subtract_Fraction(Fraction a, Fraction b)
     c->num = Subtract(Multiply(a->num, b->den), Multiply(a->den, b->num));
     c->den = Multiply(a->den, b->den);
 
+    // BigInt rem;
+    // BigInt g = GCD(a->den, b->den);
+    // BigInt a1 = Multiply(a->num, g);
+    // BigInt b1 = Multiply(b->num, g);
+    // c->num = Subtract(a1, b1);
+
+    // BigInt d = Divide(a->den, g, &rem);
+    // c->den = Multiply(b->den, d);
+
