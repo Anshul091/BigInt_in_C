@@ -924,3 +924,12 @@ Fraction add_Fraction(Fraction a, Fraction b)
 
     // reduce_Fraction(c);
 
+    return c;
+}
+
+Fraction subtract_Fraction(Fraction a, Fraction b)
+{
+    Fraction c = new_Fraction();
+    c->num = Subtract(Multiply(a->num, b->den), Multiply(a->den, b->num));
+    c->den = Multiply(a->den, b->den);
+
