@@ -942,3 +942,12 @@ Fraction subtract_Fraction(Fraction a, Fraction b)
     // BigInt d = Divide(a->den, g, &rem);
     // c->den = Multiply(b->den, d);
 
+    // free_BigInt(a1);
+    // free_BigInt(b1);
+    // free_BigInt(d);
+    // free_BigInt(g);
+    // free_BigInt(rem);
+
+    // reduce_Fraction(c);
+
+    return c;
