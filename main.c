@@ -959,3 +959,12 @@ Fraction multiply_Fraction(Fraction a, Fraction b)
     c->num = Multiply(a->num, b->num);
     c->den = Multiply(a->den, b->den);
 
+    // reduce_Fraction(c);
+
+    return c;
+}
+
+Fraction divide_Fraction(Fraction a, Fraction b)
+{
+    Fraction c = new_Fraction();
+    c->num = Multiply(a->num, b->den);
