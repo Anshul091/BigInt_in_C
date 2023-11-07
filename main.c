@@ -968,3 +968,12 @@ Fraction divide_Fraction(Fraction a, Fraction b)
 {
     Fraction c = new_Fraction();
     c->num = Multiply(a->num, b->den);
+    c->den = Multiply(a->den, b->num);
+
+    // reduce_Fraction(c);
+
+    return c;
+}
+
+void reciprocal_Fraction(Fraction a)
+{
