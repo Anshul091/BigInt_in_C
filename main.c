@@ -951,3 +951,11 @@ Fraction subtract_Fraction(Fraction a, Fraction b)
     // reduce_Fraction(c);
 
     return c;
+}
+
+Fraction multiply_Fraction(Fraction a, Fraction b)
+{
+    Fraction c = new_Fraction();
+    c->num = Multiply(a->num, b->num);
+    c->den = Multiply(a->den, b->den);
+
