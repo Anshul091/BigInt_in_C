@@ -1004,3 +1004,11 @@ void cancel_zeroes(Fraction a)
         }
     }
     a->num->d += cnt;
+    a->den->d += cnt;
+    a->num->len -= cnt;
+    a->den->len -= cnt;
+}
+
+Fraction Square_Root(BigInt k, int n)
+{
+    // Calculate the square root of a BigInt using Newton Rapson method
