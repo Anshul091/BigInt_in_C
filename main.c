@@ -995,3 +995,12 @@ void cancel_zeroes(Fraction a)
     for (int i = 0; i < Min(a->num->len, a->den->len); i++)
     {
         if (a->num->d[i] == 0 && a->den->d[i] == 0)
+        {
+            cnt++;
+        }
+        else
+        {
+            break;
+        }
+    }
+    a->num->d += cnt;
