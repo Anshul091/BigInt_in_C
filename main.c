@@ -986,3 +986,12 @@ void free_Fraction(Fraction a)
 {
     free_BigInt(a->num);
     free_BigInt(a->den);
+    free(a);
+}
+
+void cancel_zeroes(Fraction a)
+{
+    int cnt = 0;
+    for (int i = 0; i < Min(a->num->len, a->den->len); i++)
+    {
+        if (a->num->d[i] == 0 && a->den->d[i] == 0)
