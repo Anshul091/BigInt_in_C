@@ -1012,3 +1012,12 @@ void cancel_zeroes(Fraction a)
 Fraction Square_Root(BigInt k, int n)
 {
     // Calculate the square root of a BigInt using Newton Rapson method
+
+    Fraction x = new_Fraction();
+    // free_BigInt(x->num);
+    int flag = 0;
+
+    if (k->len == 1 && k->d[0] == 10005)
+    {
+        flag = 1;
+        // x->num = new_BigInt(1);
