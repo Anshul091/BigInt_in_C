@@ -977,3 +977,12 @@ Fraction divide_Fraction(Fraction a, Fraction b)
 
 void reciprocal_Fraction(Fraction a)
 {
+    BigInt temp = a->num;
+    a->num = a->den;
+    a->den = temp;
+}
+
+void free_Fraction(Fraction a)
+{
+    free_BigInt(a->num);
+    free_BigInt(a->den);
