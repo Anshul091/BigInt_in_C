@@ -1048,3 +1048,12 @@ Fraction Square_Root(BigInt k, int n)
     Fraction temp, temp1, f, df;
     Fraction two = new_Fraction();
     two->num = new_BigInt(1);
+    two->den = new_BigInt(1);
+    two->num->d[0] = 2;
+    two->den->d[0] = 1;
+
+    Fraction nn = new_Fraction();
+    nn->den = new_BigInt(1);
+    nn->num = k;
+    nn->den->d[0] = 1;
+
