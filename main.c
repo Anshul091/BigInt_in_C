@@ -1065,3 +1065,12 @@ Fraction Square_Root(BigInt k, int n)
     for (int i = 0; i < n; i++)
     {
         if (flag)
+        {
+            printf("\b\b\b%3d", i);
+        }
+        f = multiply_Fraction(x, x);
+        temp = f;
+        f = subtract_Fraction(f, nn);
+        // free_Fraction(temp);
+        df = multiply_Fraction(x, two);
+        temp = divide_Fraction(f, df);
