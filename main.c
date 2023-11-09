@@ -1057,3 +1057,11 @@ Fraction Square_Root(BigInt k, int n)
     nn->num = k;
     nn->den->d[0] = 1;
 
+    if (flag)
+    {
+        printf("Computing term:    ");
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        if (flag)
