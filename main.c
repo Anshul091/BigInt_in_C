@@ -1021,3 +1021,12 @@ Fraction Square_Root(BigInt k, int n)
     {
         flag = 1;
         // x->num = new_BigInt(1);
+        // x->num->d[0] = 2050048640064001ULL;
+        // x->den = new_BigInt(1);
+        // x->den->d[0] = 20495363200160ULL;
+
+        x->num = new_BigInt(4);
+        x->num->d[0] = 38194350081024001ULL;
+        x->num->d[1] = 947199942084943826ULL;
+        x->num->d[2] = 764652037898659122ULL;
+        x->num->d[3] = 141301459ULL;
