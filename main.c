@@ -1030,3 +1030,12 @@ Fraction Square_Root(BigInt k, int n)
         x->num->d[1] = 947199942084943826ULL;
         x->num->d[2] = 764652037898659122ULL;
         x->num->d[3] = 141301459ULL;
+
+        x->den = new_BigInt(4);
+        x->den->d[0] = 118368174297600640ULL;
+        x->den->d[1] = 1550394278198635ULL;
+        x->den->d[2] = 476412055532869542ULL;
+        x->den->d[3] = 1412661ULL;
+    }
+    else
+    {
