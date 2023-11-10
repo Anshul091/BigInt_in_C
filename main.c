@@ -1074,3 +1074,12 @@ Fraction Square_Root(BigInt k, int n)
         // free_Fraction(temp);
         df = multiply_Fraction(x, two);
         temp = divide_Fraction(f, df);
+        temp1 = x;
+        x = subtract_Fraction(x, temp);
+
+        cancel_zeroes(x);
+        reduce_Fraction(x);
+    }
+    if (flag)
+    {
+        printf("... Done!\nRoot 10005 calculated!\n");
