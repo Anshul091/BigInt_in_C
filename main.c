@@ -1083,3 +1083,12 @@ Fraction Square_Root(BigInt k, int n)
     if (flag)
     {
         printf("... Done!\nRoot 10005 calculated!\n");
+    }
+    // reduce_Fraction(x);
+    return x;
+}
+
+void PI_Chudnovsky(int n)
+{
+    // Computes value of PI using Chudnovsky algorithm
+    // n is the number of terms to be used in the algorithm
