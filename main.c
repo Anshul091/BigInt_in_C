@@ -1092,3 +1092,12 @@ void PI_Chudnovsky(int n)
 {
     // Computes value of PI using Chudnovsky algorithm
     // n is the number of terms to be used in the algorithm
+
+    ll k = -6;
+
+    BigInt c = new_BigInt(1);
+    BigInt p = new_BigInt(1);
+    BigInt q = new_BigInt(1);
+    BigInt L = new_BigInt(1);
+    BigInt dL = new_BigInt(1);
+    BigInt X = new_BigInt(1);
