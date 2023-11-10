@@ -1101,3 +1101,11 @@ void PI_Chudnovsky(int n)
     BigInt L = new_BigInt(1);
     BigInt dL = new_BigInt(1);
     BigInt X = new_BigInt(1);
+    BigInt dX = new_BigInt(1);
+    Fraction M = new_Fraction();
+    M->num = new_BigInt(1);
+    M->den = new_BigInt(1);
+
+    c->d[0] = 426880;
+    L->d[0] = 13591409;
+    dL->d[0] = 545140134;
