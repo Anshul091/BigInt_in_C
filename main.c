@@ -1127,3 +1127,12 @@ void PI_Chudnovsky(int n)
     T->den = X;
     T = multiply_Fraction(T, M);
     SUM0->num = L;
+    SUM0->den = X;
+    SUM1->num->d[0] = 0;
+    SUM1->den->d[0] = 1;
+
+    if (sqrt_10005 == NULL)
+    {
+        printf("Chudnovsky formula requires square root of 10005 to be calculated first.\n");
+        printf("Computing sqrt(10005)...\n");
+        BigInt _10005 = new_BigInt(1);
