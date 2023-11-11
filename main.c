@@ -1118,3 +1118,12 @@ void PI_Chudnovsky(int n)
     Fraction T = new_Fraction();
     Fraction SUM0 = new_Fraction();
     Fraction SUM1 = new_Fraction();
+    SUM0->num = new_BigInt(1);
+    SUM0->den = new_BigInt(1);
+    SUM1->num = new_BigInt(1);
+    SUM1->den = new_BigInt(1);
+
+    T->num = L;
+    T->den = X;
+    T = multiply_Fraction(T, M);
+    SUM0->num = L;
