@@ -1109,3 +1109,12 @@ void PI_Chudnovsky(int n)
     c->d[0] = 426880;
     L->d[0] = 13591409;
     dL->d[0] = 545140134;
+    X->d[0] = 1;
+    dX->d[0] = 262537412640768000ULL;
+    M->num->d[0] = 1;
+    M->den->d[0] = 1;
+
+    Fraction temp = new_Fraction();
+    Fraction T = new_Fraction();
+    Fraction SUM0 = new_Fraction();
+    Fraction SUM1 = new_Fraction();
