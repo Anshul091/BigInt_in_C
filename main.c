@@ -1154,3 +1154,11 @@ void PI_Chudnovsky(int n)
         M->den = Multiply(M->den, q);
 
         L = Add(L, dL);
+
+        X = Multiply(X, dX);
+        // X->sign = 1 - X->sign;
+
+        T->num = L;
+        T->den = X;
+        T = multiply_Fraction(T, M);
+
