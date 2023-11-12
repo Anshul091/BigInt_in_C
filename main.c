@@ -1145,3 +1145,12 @@ void PI_Chudnovsky(int n)
 
     for (int i = 1; i <= n; i++)
     {
+        printf("\b\b\b%3d", i);
+        k += 12;
+        p->d[0] = k * k * k - 16 * k;
+        q->d[0] = i * i * i;
+
+        M->num = Multiply(M->num, p);
+        M->den = Multiply(M->den, q);
+
+        L = Add(L, dL);
