@@ -1136,3 +1136,12 @@ void PI_Chudnovsky(int n)
         printf("Chudnovsky formula requires square root of 10005 to be calculated first.\n");
         printf("Computing sqrt(10005)...\n");
         BigInt _10005 = new_BigInt(1);
+        _10005->d[0] = 10005;
+        sqrt_10005 = Square_Root(_10005, 4);
+        printf("sqrt(10005) computed\n");
+    }
+
+    printf("Computing term    ");
+
+    for (int i = 1; i <= n; i++)
+    {
