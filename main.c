@@ -1215,3 +1215,12 @@ int main()
     int choice;
     clock_t t;
     double time;
+
+prompt:
+
+    printf("===============================================================\n");
+
+    printf("(I)\tBasic Operations on Big Integers\n");
+    printf("   \t--------------------------------\n");
+    printf("\t  1. Addition\n");
+    printf("\t  2. Subtraction\n");
