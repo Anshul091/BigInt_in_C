@@ -1198,3 +1198,12 @@ void PI_Chudnovsky(int n)
     cancel_zeroes(SUM);
     // reduce_Fraction(SUM);
 
+    PI = multiply_Fraction(SUM, sqrt_10005);
+    PI->num = Multiply(PI->num, c);
+
+    cancel_zeroes(PI);
+
+    // reduce_Fraction(PI);
+
+    // printf("Now computing decimal value of PI...\n");
+
