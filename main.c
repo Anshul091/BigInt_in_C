@@ -1189,3 +1189,12 @@ void PI_Chudnovsky(int n)
     }
 
     printf("... Done!\nCalculating SUM of terms...\n");
+
+    Fraction SUM = subtract_Fraction(SUM0, SUM1);
+
+    printf("SUM of terms calculated\n");
+
+    reciprocal_Fraction(SUM);
+    cancel_zeroes(SUM);
+    // reduce_Fraction(SUM);
+
