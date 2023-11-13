@@ -1207,3 +1207,11 @@ void PI_Chudnovsky(int n)
 
     // printf("Now computing decimal value of PI...\n");
 
+    // PI_str = Decimal_Division(PI->num, PI->den);
+}
+
+int main()
+{
+    int choice;
+    clock_t t;
+    double time;
