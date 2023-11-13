@@ -1171,3 +1171,12 @@ void PI_Chudnovsky(int n)
         }
         else
         {
+            temp = SUM1;
+            SUM1 = add_Fraction(SUM1, T);
+            cancel_zeroes(SUM1);
+            // free_Fraction(temp);
+        }
+
+        cancel_zeroes(M);
+        // reduce_Fraction(M);
+
