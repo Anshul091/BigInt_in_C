@@ -1224,3 +1224,12 @@ prompt:
     printf("   \t--------------------------------\n");
     printf("\t  1. Addition\n");
     printf("\t  2. Subtraction\n");
+    printf("\t  3. Multiplication\n");
+    printf("\t  4. Division\n");
+    printf("\t  5. Decimal Division\n");
+    printf("\t  6. Remainder (Modulo)\n");
+    printf("\t  7. GCD\n");
+    printf("\t  8. Power\n");
+    printf("\t  9. Factorial\n");
+    
+    printf("\n");
