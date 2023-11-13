@@ -1180,3 +1180,12 @@ void PI_Chudnovsky(int n)
         cancel_zeroes(M);
         // reduce_Fraction(M);
 
+        // if (i % 50 == 0)
+        // {
+        //     reduce_Fraction(M);
+        //     reduce_Fraction(SUM0);
+        //     reduce_Fraction(SUM1);
+        // }
+    }
+
+    printf("... Done!\nCalculating SUM of terms...\n");
