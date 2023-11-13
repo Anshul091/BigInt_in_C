@@ -1162,3 +1162,12 @@ void PI_Chudnovsky(int n)
         T->den = X;
         T = multiply_Fraction(T, M);
 
+        if (i % 2 == 0)
+        {
+            temp = SUM0;
+            SUM0 = add_Fraction(SUM0, T);
+            cancel_zeroes(SUM0);
+            // free_Fraction(temp);
+        }
+        else
+        {
