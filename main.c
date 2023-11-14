@@ -1242,3 +1242,12 @@ prompt:
     printf("\t 13. Division\n");
     printf("\t 14. Conjugate\n");
     
+    printf("\n");
+
+    printf("(III)\tOperations on Fractions\n");
+    printf("   \t------------------------\n");
+    printf("\t 15. Addition\n");
+    printf("\t 16. Subtraction\n");
+    printf("\t 17. Multiplication\n");
+    printf("\t 18. Division\n");
+    printf("\t 19. Reduce to Simplest Form\n");
