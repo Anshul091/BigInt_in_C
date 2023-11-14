@@ -1251,3 +1251,11 @@ prompt:
     printf("\t 17. Multiplication\n");
     printf("\t 18. Division\n");
     printf("\t 19. Reduce to Simplest Form\n");
+    printf("\n");
+
+    printf("(IV)\tCOMPUTATION OF PI\n");
+    printf("   \t-----------------\n");
+    printf("\t 20. Compute Sqrt(10005) using Newton-Raphson Algorithm\n");
+    printf("\t 21. Compute Value of PI using Chudnovsky Algorithm\n");
+    printf("\n");
+
