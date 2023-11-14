@@ -1233,3 +1233,12 @@ prompt:
     printf("\t  9. Factorial\n");
     
     printf("\n");
+
+    printf("(II)\tOperations on Complex Numbers\n");
+    printf("   \t------------------------------\n");
+    printf("\t 10. Addition\n");
+    printf("\t 11. Subtraction\n");
+    printf("\t 12. Multiplication\n");
+    printf("\t 13. Division\n");
+    printf("\t 14. Conjugate\n");
+    
