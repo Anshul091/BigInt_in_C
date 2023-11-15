@@ -1259,3 +1259,12 @@ prompt:
     printf("\t 21. Compute Value of PI using Chudnovsky Algorithm\n");
     printf("\n");
 
+    printf("(V)\tMiscellaneous\n");
+    printf("   \t-------------\n");
+    printf("\t 22. Set Decimal Precision\n");
+    printf("\t 23. Exit the program\n");
+
+    printf("===============================================================\n");
+
+
+    printf("\nEnter your choice: ");
