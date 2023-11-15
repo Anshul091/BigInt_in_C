@@ -1268,3 +1268,12 @@ prompt:
 
 
     printf("\nEnter your choice: ");
+    scanf("%d", &choice);
+
+    switch (choice)
+    {
+        case 1:
+        {
+            printf("Enter the first number: ");
+            BigInt a = input_BigInt();
+            printf("Enter the second number: ");
