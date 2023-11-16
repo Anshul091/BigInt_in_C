@@ -1295,3 +1295,12 @@ prompt:
             BigInt a = input_BigInt();
             printf("Enter the second number: ");
             BigInt b = input_BigInt();
+            t = clock();
+            BigInt c = Subtract(a, b);
+            printf("The difference is: ");
+            print_BigInt(c);
+            t = clock() - t;
+            time = ((double)t)/CLOCKS_PER_SEC;
+            printf("Execution time: %g seconds\n", time);
+            printf("\n");
+            break;
