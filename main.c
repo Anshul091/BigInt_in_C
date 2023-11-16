@@ -1277,3 +1277,12 @@ prompt:
             printf("Enter the first number: ");
             BigInt a = input_BigInt();
             printf("Enter the second number: ");
+            BigInt b = input_BigInt();
+            t = clock();
+            BigInt c = Add(a, b);
+            printf("The sum is: ");
+            print_BigInt(c);
+            t = clock() - t;
+            time = ((double)t)/CLOCKS_PER_SEC;
+            printf("Execution time: %g seconds\n", time);
+            printf("\n");
