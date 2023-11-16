@@ -1286,3 +1286,12 @@ prompt:
             time = ((double)t)/CLOCKS_PER_SEC;
             printf("Execution time: %g seconds\n", time);
             printf("\n");
+            break;
+        }
+
+        case 2:
+        {
+            printf("Enter the first number: ");
+            BigInt a = input_BigInt();
+            printf("Enter the second number: ");
+            BigInt b = input_BigInt();
