@@ -1330,3 +1330,12 @@ prompt:
             printf("Enter the divisor: ");
             BigInt b = input_BigInt();
             BigInt rem;
+            t = clock();
+            BigInt c = Divide(a, b, &rem);
+            t = clock() - t;
+            time = ((double)t)/CLOCKS_PER_SEC;
+            printf("The quotient is: ");
+            print_BigInt(c);
+            printf("The remainder is: ");
+            print_BigInt(rem);
+            printf("Execution time: %g seconds\n", time);
