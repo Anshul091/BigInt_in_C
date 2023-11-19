@@ -1348,3 +1348,12 @@ prompt:
             printf("Enter the dividend: ");
             BigInt a = input_BigInt();
             printf("Enter the divisor: ");
+            BigInt b = input_BigInt();
+            t = clock();
+            char* c = Decimal_Division(a, b);
+            t = clock() - t;
+            time = ((double)t)/CLOCKS_PER_SEC;
+            printf("The quotient is: ");
+            printf("%s\n", c);
+            printf("Execution time: %g seconds\n", time);
+            printf("\n");
