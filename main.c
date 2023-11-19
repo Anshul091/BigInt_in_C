@@ -1339,3 +1339,12 @@ prompt:
             printf("The remainder is: ");
             print_BigInt(rem);
             printf("Execution time: %g seconds\n", time);
+            printf("\n");
+            break;
+        }
+
+        case 5:
+        {
+            printf("Enter the dividend: ");
+            BigInt a = input_BigInt();
+            printf("Enter the divisor: ");
