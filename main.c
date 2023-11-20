@@ -1357,3 +1357,11 @@ prompt:
             printf("%s\n", c);
             printf("Execution time: %g seconds\n", time);
             printf("\n");
+            break;
+        }
+
+        case 6:
+        {
+            printf("Enter the dividend: ");
+            BigInt a = input_BigInt();
+            printf("Enter the divisor: ");
