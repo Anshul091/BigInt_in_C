@@ -1392,3 +1392,12 @@ prompt:
             print_BigInt(c);
             printf("Execution time: %g seconds\n", time);
             printf("\n");
+            break;
+        }
+
+        case 8:
+        {
+            printf("Enter the base: ");
+            BigInt a = input_BigInt();
+            printf("Enter the exponent: ");
+            llu b;
