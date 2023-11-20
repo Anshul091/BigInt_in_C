@@ -1383,3 +1383,12 @@ prompt:
             printf("Enter the first number: ");
             BigInt a = input_BigInt();
             printf("Enter the second number: ");
+            BigInt b = input_BigInt();
+            t = clock();
+            BigInt c = GCD(a, b);
+            t = clock() - t;
+            time = ((double)t)/CLOCKS_PER_SEC;
+            printf("The GCD is: ");
+            print_BigInt(c);
+            printf("Execution time: %g seconds\n", time);
+            printf("\n");
