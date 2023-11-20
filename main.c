@@ -1374,3 +1374,12 @@ prompt:
             printf("The remainder is: ");
             print_BigInt(rem);
             printf("Execution time: %g seconds\n", time);
+            printf("\n");
+            break;
+        }
+
+        case 7:
+        {
+            printf("Enter the first number: ");
+            BigInt a = input_BigInt();
+            printf("Enter the second number: ");
