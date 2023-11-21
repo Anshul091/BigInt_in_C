@@ -1401,3 +1401,12 @@ prompt:
             BigInt a = input_BigInt();
             printf("Enter the exponent: ");
             llu b;
+            scanf("%llu", &b);
+            t = clock();
+            BigInt c = Power(a, b);
+            t = clock() - t;
+            time = ((double)t)/CLOCKS_PER_SEC;
+            printf("The result is: ");
+            print_BigInt(c);
+            printf("Execution time: %g seconds\n", time);
+            printf("\n");
