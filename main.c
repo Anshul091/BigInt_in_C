@@ -1418,3 +1418,12 @@ prompt:
             printf("Enter the number: ");
             llu a;
             scanf("%llu", &a);
+            t = clock();
+            BigInt c = Factorial(a);
+            t = clock() - t;
+            time = ((double)t)/CLOCKS_PER_SEC;
+            printf("The factorial is: ");
+            print_BigInt(c);
+            printf("Execution time: %g seconds\n", time);
+            printf("\n");
+            break;
