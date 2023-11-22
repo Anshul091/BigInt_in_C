@@ -1427,3 +1427,12 @@ prompt:
             printf("Execution time: %g seconds\n", time);
             printf("\n");
             break;
+        }
+
+        
+        case 10:
+        {
+            long long int a1, a2, b1, b2;
+            printf("Enter the real part of first number: ");
+            scanf("%lld", &a1);
+            printf("Enter the imaginary part of first number: ");
