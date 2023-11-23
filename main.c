@@ -1445,3 +1445,12 @@ prompt:
             Complex b = new_Complex();
             a->real = a1;
             a->imag = a2;
+            b->real = b1;
+            b->imag = b2;
+            t = clock();
+            Complex c = add_Complex(a, b);
+            t = clock() - t;
+            time = ((double)t)/CLOCKS_PER_SEC;
+            printf("The sum is: ");
+            print_Complex(c);
+            printf("Execution time: %g seconds\n", time);
