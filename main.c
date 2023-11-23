@@ -1436,3 +1436,12 @@ prompt:
             printf("Enter the real part of first number: ");
             scanf("%lld", &a1);
             printf("Enter the imaginary part of first number: ");
+            scanf("%lld", &a2);
+            printf("Enter the real part of second number: ");
+            scanf("%lld", &b1);
+            printf("Enter the imaginary part of second number: ");
+            scanf("%lld", &b2);
+            Complex a = new_Complex();
+            Complex b = new_Complex();
+            a->real = a1;
+            a->imag = a2;
