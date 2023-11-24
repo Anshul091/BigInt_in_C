@@ -1471,3 +1471,12 @@ prompt:
             scanf("%lld", &b2);
             Complex a = new_Complex();
             Complex b = new_Complex();
+            a->real = a1;
+            a->imag = a2;
+            b->real = b1;
+            b->imag = b2;
+            t = clock();
+            Complex c = subtract_Complex(a, b);
+            t = clock() - t;
+            time = ((double)t)/CLOCKS_PER_SEC;
+            printf("The difference is: ");
