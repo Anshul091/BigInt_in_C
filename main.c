@@ -1480,3 +1480,12 @@ prompt:
             t = clock() - t;
             time = ((double)t)/CLOCKS_PER_SEC;
             printf("The difference is: ");
+            print_Complex(c);
+            printf("Execution time: %g seconds\n", time);
+            printf("\n");
+            break;
+        }
+
+        case 12:
+        {
+            long long int a1, a2, b1, b2;
