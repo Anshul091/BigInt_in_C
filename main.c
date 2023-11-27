@@ -1533,3 +1533,12 @@ prompt:
             b->imag = b2;
             t = clock();
             Complex c = divide_Complex(a, b);
+            t = clock() - t;
+            time = ((double)t)/CLOCKS_PER_SEC;
+            printf("The quotient is: ");
+            print_Complex(c);
+            printf("Execution time: %g seconds\n", time);
+            printf("\n");
+            break;
+        }
+
