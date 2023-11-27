@@ -1542,3 +1542,12 @@ prompt:
             break;
         }
 
+        case 14:
+        {
+            long long int a1, a2;
+            printf("Enter the real part of the number: ");
+            scanf("%lld", &a1);
+            printf("Enter the imaginary part of the number: ");
+            scanf("%lld", &a2);
+            Complex a = new_Complex();
+            a->real = a1;
