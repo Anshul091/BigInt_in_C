@@ -1507,3 +1507,11 @@ prompt:
             Complex c = multiply_Complex(a, b);
             t = clock() - t;
             time = ((double)t)/CLOCKS_PER_SEC;
+            printf("The product is: ");
+            print_Complex(c);
+            printf("Execution time: %g seconds\n", time);
+            printf("\n");
+            break;
+        }
+
+        case 13:
