@@ -1560,3 +1560,11 @@ prompt:
             print_Complex(c);
             printf("Execution time: %g seconds\n", time);
             printf("\n");
+            break;
+        }
+
+
+        case 15:
+        {
+            printf("For first number:\n");
+            Fraction a = input_Fraction();
