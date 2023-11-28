@@ -1551,3 +1551,12 @@ prompt:
             scanf("%lld", &a2);
             Complex a = new_Complex();
             a->real = a1;
+            a->imag = a2;
+            t = clock();
+            Complex c = conjugate(a);
+            t = clock() - t;
+            time = ((double)t)/CLOCKS_PER_SEC;
+            printf("The conjugate is: ");
+            print_Complex(c);
+            printf("Execution time: %g seconds\n", time);
+            printf("\n");
