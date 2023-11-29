@@ -1577,3 +1577,12 @@ prompt:
             time = ((double)t)/CLOCKS_PER_SEC;
             printf("The sum is:\n");
             print_Fraction(c);
+            printf("Execution time: %g seconds\n", time);
+            printf("\n");
+            break;
+        }
+
+        case 16:
+        {
+            printf("For first number:\n");
+            Fraction a = input_Fraction();
