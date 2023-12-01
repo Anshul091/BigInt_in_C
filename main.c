@@ -1586,3 +1586,12 @@ prompt:
         {
             printf("For first number:\n");
             Fraction a = input_Fraction();
+            printf("For second number:\n");
+            Fraction b = input_Fraction();
+            t = clock();
+            Fraction c = subtract_Fraction(a, b);
+            reduce_Fraction(c);
+            t = clock() - t;
+            time = ((double)t)/CLOCKS_PER_SEC;
+            printf("The difference is:\n");
+            print_Fraction(c);
