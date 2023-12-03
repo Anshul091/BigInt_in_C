@@ -1639,3 +1639,12 @@ prompt:
         case 19:
         {
             Fraction a = input_Fraction();
+            t = clock();
+            reduce_Fraction(a);
+            t = clock() - t;
+            time = ((double)t)/CLOCKS_PER_SEC;
+            printf("Your Fraction in simplest form:\n");
+            print_Fraction(a);
+            printf("Execution time: %g seconds\n", time);
+            printf("\n");
+            break;
