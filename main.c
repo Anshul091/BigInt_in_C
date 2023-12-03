@@ -1630,3 +1630,12 @@ prompt:
             t = clock() - t;
             time = ((double)t)/CLOCKS_PER_SEC;
             printf("The quotient is:\n");
+            print_Fraction(c);
+            printf("Execution time: %g seconds\n", time);
+            printf("\n");
+            break;
+        }
+
+        case 19:
+        {
+            Fraction a = input_Fraction();
