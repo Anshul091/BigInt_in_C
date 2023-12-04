@@ -1657,3 +1657,11 @@ prompt:
             int n;
             printf("Enter number of terms of Newton-Raphson Algorithm: ");
             scanf("%d", &n);
+            printf("Computing sqrt(10005)...\n");
+            t = clock();
+            sqrt_10005 = Square_Root(a, n);
+            t = clock() - t;
+            time = ((double)t)/CLOCKS_PER_SEC;
+            printf("Rational Equivalent of square root computed\n");
+            print_Fraction(sqrt_10005);
+            printf("Execution time: %g seconds\n", time);
