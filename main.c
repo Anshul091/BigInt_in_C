@@ -1648,3 +1648,12 @@ prompt:
             printf("Execution time: %g seconds\n", time);
             printf("\n");
             break;
+        }
+
+        case 20:
+        {
+            BigInt a = new_BigInt(1);
+            a->d[0] = 10005;
+            int n;
+            printf("Enter number of terms of Newton-Raphson Algorithm: ");
+            scanf("%d", &n);
