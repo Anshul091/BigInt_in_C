@@ -1665,3 +1665,12 @@ prompt:
             printf("Rational Equivalent of square root computed\n");
             print_Fraction(sqrt_10005);
             printf("Execution time: %g seconds\n", time);
+            printf("Do you want to convert it to decimal and write it to a file?\n");
+            printf("Note: Fraction to decimal conversion is very computationally intensive and takes a lot of time.\n");
+            printf("Your choice? (y/n): ");
+            char ch;
+            scanf(" %c", &ch);
+            ch |= ' ';
+            if(ch == 'y')
+            {
+                FILE *fp = fopen(OUTPUT_SQRT_FILENAME, "w");
