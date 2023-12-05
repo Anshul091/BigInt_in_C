@@ -1674,3 +1674,12 @@ prompt:
             if(ch == 'y')
             {
                 FILE *fp = fopen(OUTPUT_SQRT_FILENAME, "w");
+                if(fp == NULL)
+                {
+                    printf("Error opening file\n");
+                    break;
+                }
+                t = clock();
+                char *ans = Decimal_Division(sqrt_10005->num, sqrt_10005->den);
+                t = clock() - t;
+                time = ((double)t)/CLOCKS_PER_SEC;
