@@ -1683,3 +1683,12 @@ prompt:
                 char *ans = Decimal_Division(sqrt_10005->num, sqrt_10005->den);
                 t = clock() - t;
                 time = ((double)t)/CLOCKS_PER_SEC;
+                fprintf(fp, "%s", ans);
+                fclose(fp);
+                printf("Sqrt(10005) =\n%s\n", ans);
+                printf("Execution time: %g seconds\n", time);
+                printf("Output Written to file\n");
+            }
+            printf("\n");
+            break;
+        }
