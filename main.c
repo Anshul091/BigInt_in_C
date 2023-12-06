@@ -1692,3 +1692,12 @@ prompt:
             printf("\n");
             break;
         }
+
+        case 21:
+        {
+            int n;
+            printf("Enter number of terms of Chudnovsky Algorithm: ");
+            scanf("%d", &n);
+            printf("Computing pi...\n");
+            t = clock();
+            PI_Chudnovsky(n);
