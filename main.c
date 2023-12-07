@@ -1701,3 +1701,12 @@ prompt:
             printf("Computing pi...\n");
             t = clock();
             PI_Chudnovsky(n);
+            t = clock() - t;
+            time = ((double)t)/CLOCKS_PER_SEC;
+            printf("Rational Equivalent of pi computed\n");
+            printf("Execution time: %g seconds\n", time);
+            // print_Fraction(PI);
+            printf("Do you want to convert it to decimal and write it to a file?\n");
+            printf("Note: Fraction to decimal conversion is very computationally intensive and takes a lot of time.\n");
+            printf("Your choice? (y/n): ");
+            char ch;
