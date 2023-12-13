@@ -1710,3 +1710,11 @@ prompt:
             printf("Note: Fraction to decimal conversion is very computationally intensive and takes a lot of time.\n");
             printf("Your choice? (y/n): ");
             char ch;
+            scanf(" %c", &ch);
+            ch |= ' ';
+
+            if(ch == 'y')
+            {
+                FILE *fp = fopen(OUTPUT_PI_FILENAME, "w");
+                if(fp == NULL)
+                {
