@@ -1727,3 +1727,12 @@ prompt:
                 time = ((double)t)/CLOCKS_PER_SEC;
                 fprintf(fp, "%s", PI_str);
                 fclose(fp);
+                printf("PI =\n%s\n", PI_str);
+                printf("Execution time: %g seconds\n", time);
+                printf("Output Written to file\n");
+            }
+            printf("\n");
+            break;
+
+        }
+        
