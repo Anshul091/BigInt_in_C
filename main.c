@@ -1718,3 +1718,12 @@ prompt:
                 FILE *fp = fopen(OUTPUT_PI_FILENAME, "w");
                 if(fp == NULL)
                 {
+                    printf("Error opening file\n");
+                    break;
+                }
+                t = clock();
+                PI_str = Decimal_Division(PI->num, PI->den);
+                t = clock() - t;
+                time = ((double)t)/CLOCKS_PER_SEC;
+                fprintf(fp, "%s", PI_str);
+                fclose(fp);
