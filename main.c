@@ -1736,3 +1736,12 @@ prompt:
 
         }
         
+        case 22:
+        {
+            printf("Enter new precision for decimal conversion: ");
+            scanf("%d", &decimal_precision);
+            printf("\n");
+            break;
+        }
+
+        case 23:
