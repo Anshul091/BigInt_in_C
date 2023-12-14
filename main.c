@@ -1745,3 +1745,12 @@ prompt:
         }
 
         case 23:
+        {
+            printf("Exiting...\n");
+            exit(0);
+        }
+
+        default :
+        {
+            printf("Invalid choice , please enter a correct choice\n");
+        }
