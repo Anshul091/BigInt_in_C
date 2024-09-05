@@ -1,33 +1,94 @@
-# Introduction
-## High-Precision Mathematical Computations in C
+# Chudnovsky Algorithm for Computing Pi
 
-This repository showcases a collection of advanced mathematical computations and custom data structures implemented in C. The project includes:
+This project implements the Chudnovsky algorithm to compute the value of Pi (`π`). The algorithm is known for its high precision and efficiency in calculating Pi using infinite series. Additionally, the program includes operations on big integers, fractions, and complex numbers.
 
-### Key Features
+## Features
 
-1. **High-Precision Calculation of Pi**: 
-   - Computed the value of π up to 10,000 decimal places using the Chudnovsky Algorithm, with the capability to compute to theoretically infinite places.
+- **Big Integer Operations:** Addition, subtraction, multiplication, division, modulo, GCD, power, and factorial.
+- **Complex Number Operations:** Addition, subtraction, multiplication, division, and conjugate.
+- **Fraction Operations:** Addition, subtraction, multiplication, division, and reduction to simplest form.
+- **Chudnovsky Algorithm:** Computes the value of Pi using the Chudnovsky formula with a specified number of terms.
+- **Newton-Raphson Algorithm:** Computes the square root of 10005, a critical component of the Chudnovsky formula.
 
-2. **Mathematical Algorithms and Methods**:
-   - Implemented the Newton-Raphson method for root-finding and constructed algorithms for various complex mathematical computations.
+## Getting Started
 
-3. **Custom Data Structures**:
-   - Developed a `BigInt` library capable of handling very large integers, a `Complex` number library for complex arithmetic, and a `Fraction` class for rational number operations.
-   - Supports various operations such as addition, subtraction, multiplication, division, power, factorial, square root, and more.
+### Prerequisites
 
-4. **Versatile and Efficient**:
-   - The self-designed data structures can handle any integer range, perform computations with complex numbers, and manage large fractional values seamlessly.
+Ensure you have a C/C++ compiler installed. The program uses standard C libraries, so no additional dependencies are required.
 
-This project is a powerful toolkit for developers and mathematicians interested in high-precision calculations and algorithmic computations in C.
+### Compilation
 
+To compile the program, use the following command:
 
+```sh
+gcc main.c -o main
+```
+### Running the Program
+After compiling, you can run the program with:
+```
+./a.out
+```
+### Menu Options
 
-# How to run the code?
-   - Clone the repository using
-     ```sh
-     git clone https://github.com/Anshul091/BigInt_in_C.git
-     ```
-   - Run the main file using c++ compiler(gcc or clang)
-     ```sh
-     gcc main.c
-     ```
+Upon running, the program presents a menu with the following options:
+
+1. **Basic Operations on Big Integers:**
+   - Addition
+   - Subtraction
+   - Multiplication
+   - Division
+   - Decimal Division
+   - Remainder (Modulo)
+   - GCD
+   - Power
+   - Factorial
+
+2. **Operations on Complex Numbers:**
+   - Addition
+   - Subtraction
+   - Multiplication
+   - Division
+   - Conjugate
+
+3. **Operations on Fractions:**
+   - Addition
+   - Subtraction
+   - Multiplication
+   - Division
+   - Reduce to Simplest Form
+
+4. **Computation of Pi:**
+   - Compute the square root of 10005 using the Newton-Raphson algorithm
+   - Compute the value of Pi using the Chudnovsky algorithm
+
+5. **Miscellaneous:**
+   - Set decimal precision
+   - Exit the program
+
+## Chudnovsky Algorithm
+
+The Chudnovsky algorithm is a fast method for calculating the digits of Pi. The implementation calculates Pi as a fraction, which can then be converted to its decimal representation.
+
+### Using the Chudnovsky Algorithm
+
+1. Select the option to compute Pi from the menu.
+2. Enter the number of terms you wish to use for the computation. More terms yield higher precision but increase computation time.
+3. Optionally, you can write the computed value of Pi in decimal form to a file.
+
+## Performance Considerations
+
+- Computations involving large numbers and high precision can be computationally intensive.
+- The program uses arbitrary-precision arithmetic to handle large integers and fractions.
+
+## Contributing
+
+Contributions are welcome! Feel free to fork the repository and submit pull requests with improvements or additional features.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- The Chudnovsky algorithm for its efficient and precise calculation of Pi.
+- Big integer and fraction arithmetic support for handling large calculations.
